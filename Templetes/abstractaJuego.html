@@ -1,0 +1,27 @@
+ 
+<ul class="nav nav-tabs">
+	<li  class="btn btn-info animated bounceInLeft" >
+		<a ng-click="IrAInicio()" >
+			<span class="glyphicon glyphicon-list-alt">&nbsp;</span>
+			menu
+		</a>
+	</li>
+	<li class="btn btn-info animated bounceInLeft" >
+		<a ng-click="irAAlta()" >
+			<span class="glyphicon glyphicon-plus-sign">&nbsp;</span>
+			Adivina el numero
+		</a>
+	</li>
+	<li  class="btn btn-info animated bounceInLeft" >
+		<a ng-click="IrAGrilla()" > 
+			<span class="glyphicon glyphicon-th" >&nbsp;</span>
+			Adivina el numero 2</a>
+		</li>
+		<li  class="btn btn-info animated bounceInLeft" >
+			<a ng-click="IrAGrilla()" > 
+				<span class="glyphicon glyphicon-th" >&nbsp;</span>
+			 	Piedra, papel o tijera </a>
+			</li>
+		</ul>
+		
+		<div ui-view name="controlador"></div>

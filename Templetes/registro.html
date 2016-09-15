@@ -1,0 +1,25 @@
+<div class="container">
+
+	<div class="page-header " >
+		<h1>Registritate !!</h1>      
+	</div>
+	<div class="CajaInicio animated bounceInRight">
+		<h1 sy>Registro</h1>
+
+		<form name="myForm" id="FormIngreso">
+			<span class="alerta" ng-show="myForm.mail.$error.email">No es un mail valido <br></span> 
+			<span class="alerta" ng-show="myForm.mail.$invalid && show && !myForm.mail.$error.email">El mail es requerido <br></span>
+
+			<input type="email" name="mail" ng-model="mail" placeholder="ingrese mail" value="" required />	
+			<span class="alerta" ng-show="myForm.clave.$viewValue!=myForm.reClave.$viewValue && !myForm.clave.$invalid"  >Las contraseña no son iguales <br></span>
+			<span class="alerta" ng-show="myForm.clave.$invalid && show">La contraseña es necesaria! <br></span> 
+			<input type="password" name="clave"  ng-model="clave" placeholder="Ingrese la contraseña" required>
+			<span class="alerta" ng-show="myForm.reClave.$invalid && show" >La contraseña es necesaria! <br></span> 
+			<input type="password" name="reClave"  ng-model="reClave" placeholder="Ingrese la contraseña" required>
+			<input type="button" value="Aceptar" class="" ng-click="show= myForm.$invalid ? true : false ; show ? true: prueba() ">
+			 <br>
+			<a  ng-click="IrAlLogin()" clase="MiBotonUTN">Volver</a>
+
+		</form>
+	</div>
+</div>
